@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">simdutf
-   &#160;<span id="projectnumber">5.2.8</span>
+   &#160;<span id="projectnumber">5.5.0</span>
    </div>
    <div id="projectbrief">Unicode at GB/s.</div>
   </td>
@@ -344,23 +344,23 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 <tr class="memdesc:a9c8897b131c52d703cb2c5d032c29ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the maximal binary length in bytes given the base64 input.  <a href="classsimdutf_1_1implementation.html#a9c8897b131c52d703cb2c5d032c29ff6">More...</a><br /></td></tr>
 <tr class="separator:a9c8897b131c52d703cb2c5d032c29ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73d3db16d1520bb7ee958692f8ac6bc9"><td class="memItemLeft" align="right" valign="top">virtual simdutf_warn_unused <a class="el" href="structsimdutf_1_1result.html">result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimdutf_1_1implementation.html#a73d3db16d1520bb7ee958692f8ac6bc9">base64_to_binary</a> (const char *input, size_t length, char *output, base64_options options=base64_default) const noexcept=0</td></tr>
-<tr class="memdesc:a73d3db16d1520bb7ee958692f8ac6bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a base64 input to a binary ouput.  <a href="classsimdutf_1_1implementation.html#a73d3db16d1520bb7ee958692f8ac6bc9">More...</a><br /></td></tr>
+<tr class="memdesc:a73d3db16d1520bb7ee958692f8ac6bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a base64 input to a binary output.  <a href="classsimdutf_1_1implementation.html#a73d3db16d1520bb7ee958692f8ac6bc9">More...</a><br /></td></tr>
 <tr class="separator:a73d3db16d1520bb7ee958692f8ac6bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab209f124bfae37db124194317450f88a"><td class="memItemLeft" align="right" valign="top">virtual simdutf_warn_unused <a class="el" href="structsimdutf_1_1result.html">result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimdutf_1_1implementation.html#ab209f124bfae37db124194317450f88a">base64_to_binary</a> (const char16_t *input, size_t length, char *output, base64_options options=base64_default) const noexcept=0</td></tr>
-<tr class="memdesc:ab209f124bfae37db124194317450f88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a base64 input to a binary ouput.  <a href="classsimdutf_1_1implementation.html#ab209f124bfae37db124194317450f88a">More...</a><br /></td></tr>
+<tr class="memdesc:ab209f124bfae37db124194317450f88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a base64 input to a binary output.  <a href="classsimdutf_1_1implementation.html#ab209f124bfae37db124194317450f88a">More...</a><br /></td></tr>
 <tr class="separator:ab209f124bfae37db124194317450f88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7935750344384cc0130094cb6c440826"><td class="memItemLeft" align="right" valign="top">virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimdutf_1_1implementation.html#a7935750344384cc0130094cb6c440826">base64_length_from_binary</a> (size_t length, base64_options options=base64_default) const noexcept=0</td></tr>
 <tr class="memdesc:a7935750344384cc0130094cb6c440826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the base64 length in bytes given the length of a binary input.  <a href="classsimdutf_1_1implementation.html#a7935750344384cc0130094cb6c440826">More...</a><br /></td></tr>
 <tr class="separator:a7935750344384cc0130094cb6c440826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5823f6a86315f4404a4f437977abf9df"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsimdutf_1_1implementation.html#a5823f6a86315f4404a4f437977abf9df">binary_to_base64</a> (const char *input, size_t length, char *output, base64_options options=base64_default) const noexcept=0</td></tr>
-<tr class="memdesc:a5823f6a86315f4404a4f437977abf9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a binary input to a base64 ouput.  <a href="classsimdutf_1_1implementation.html#a5823f6a86315f4404a4f437977abf9df">More...</a><br /></td></tr>
+<tr class="memdesc:a5823f6a86315f4404a4f437977abf9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a binary input to a base64 output.  <a href="classsimdutf_1_1implementation.html#a5823f6a86315f4404a4f437977abf9df">More...</a><br /></td></tr>
 <tr class="separator:a5823f6a86315f4404a4f437977abf9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An implementation of simdutf for a particular CPU architecture. </p>
 <p>Also used to maintain the currently active implementation. The active implementation is automatically initialized on first use to the most advanced implementation supported by the host. </p>
 
-<p class="definition">Definition at line <a class="el" href="implementation_8h_source.html#l01540">1540</a> of file <a class="el" href="implementation_8h_source.html">implementation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implementation_8h_source.html#l01617">1617</a> of file <a class="el" href="implementation_8h_source.html">implementation.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afd306a0bc3e221964af3f31a64784b12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd306a0bc3e221964af3f31a64784b12">&#9670;&nbsp;</a></span>autodetect_encoding()</h2>
@@ -499,7 +499,7 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </table>
 </div><div class="memdoc">
 
-<p>Convert a base64 input to a binary ouput. </p>
+<p>Convert a base64 input to a binary output. </p>
 <p>This function follows the WHATWG forgiving-base64 format, which means that it will ignore any ASCII spaces in the input. You may provide a padded input (with one or two equal signs at the end) or an unpadded input (without any equal signs at the end).</p>
 <p>See <a href="https://infra.spec.whatwg.org/#forgiving-base64-decode">https://infra.spec.whatwg.org/#forgiving-base64-decode</a></p>
 <p>This function will fail in case of invalid input. There are two possible reasons for failure: the input contains a number of base64 characters that when divided by 4, leaves a single remainder character (BASE64_INPUT_REMAINDER), or the input contains a character that is not a valid base64 character (INVALID_BASE64_CHARACTER).</p>
@@ -563,7 +563,7 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </table>
 </div><div class="memdoc">
 
-<p>Convert a base64 input to a binary ouput. </p>
+<p>Convert a base64 input to a binary output. </p>
 <p>This function follows the WHATWG forgiving-base64 format, which means that it will ignore any ASCII spaces in the input. You may provide a padded input (with one or two equal signs at the end) or an unpadded input (without any equal signs at the end).</p>
 <p>See <a href="https://infra.spec.whatwg.org/#forgiving-base64-decode">https://infra.spec.whatwg.org/#forgiving-base64-decode</a></p>
 <p>This function will fail in case of invalid input. There are two possible reasons for failure: the input contains a number of base64 characters that when divided by 4, leaves a single remainder character (BASE64_INPUT_REMAINDER), or the input contains a character that is not a valid base64 character (INVALID_BASE64_CHARACTER).</p>
@@ -627,8 +627,9 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </table>
 </div><div class="memdoc">
 
-<p>Convert a binary input to a base64 ouput. </p>
-<p>The output is always padded with equal signs so that it is a multiple of 4 bytes long.</p>
+<p>Convert a binary input to a base64 output. </p>
+<p>The default option (simdutf::base64_default) uses the characters <code>+</code> and <code>/</code> as part of its alphabet. Further, it adds padding (<code>=</code>) at the end of the output to ensure that the output length is a multiple of four.</p>
+<p>The URL option (simdutf::base64_url) uses the characters <code>-</code> and <code>_</code> as part of its alphabet. No padding is added at the end of the output.</p>
 <p>This function always succeeds.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -906,7 +907,7 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
   <table class="params">
     <tr><td class="paramname">input</td><td>the Latin1 string to convert </td></tr>
     <tr><td class="paramname">length</td><td>the length of the string in bytes </td></tr>
-    <tr><td class="paramname">latin1_output</td><td>the pointer to buffer that can hold conversion result </td></tr>
+    <tr><td class="paramname">utf8_output</td><td>the pointer to buffer that can hold conversion result </td></tr>
   </table>
   </dd>
 </dl>
@@ -2489,7 +2490,8 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </div><div class="memdoc">
 
 <p>Convert valid UTF-16BE string into Latin1 string. </p>
-<p>This function assumes that the input string is valid UTF-8.</p>
+<p>This function assumes that the input string is valid UTF16-BE and that it can be represented as Latin1. If you violate this assumption, the result is implementation defined and may include system-dependent behavior such as crashes.</p>
+<p>This function is for expert users only and not part of our public API. Use convert_utf16be_to_latin1 instead.</p>
 <p>This function is not BOM-aware.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2654,7 +2656,8 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </div><div class="memdoc">
 
 <p>Convert valid UTF-16LE string into Latin1 string. </p>
-<p>This function assumes that the input string is valid UTF-8.</p>
+<p>This function assumes that the input string is valid UTF-L16LE and that it can be represented as Latin1. If you violate this assumption, the result is implementation defined and may include system-dependent behavior such as crashes.</p>
+<p>This function is for expert users only and not part of our public API. Use convert_utf16le_to_latin1 instead.</p>
 <p>This function is not BOM-aware.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2819,7 +2822,8 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </div><div class="memdoc">
 
 <p>Convert valid UTF-32 string into Latin1 string. </p>
-<p>This function assumes that the input string is valid UTF-32.</p>
+<p>This function assumes that the input string is valid UTF-32 and can be represented as Latin1. If you violate this assumption, the result is implementation defined and may include system-dependent behavior such as crashes.</p>
+<p>This function is for expert users only and not part of our public API. Use convert_utf32_to_latin1 instead.</p>
 <p>This function is not BOM-aware.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3039,7 +3043,8 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </div><div class="memdoc">
 
 <p>Convert valid UTF-8 string into latin1 string. </p>
-<p>This function assumes that the input string is valid UTF-8.</p>
+<p>This function assumes that the input string is valid UTF-8 and that it can be represented as Latin1. If you violate this assumption, the result is implementation defined and may include system-dependent behavior such as crashes.</p>
+<p>This function is for expert users only and not part of our public API. Use convert_utf8_to_latin1 instead.</p>
 <p>This function is not BOM-aware.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3250,7 +3255,7 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </div><div class="memdoc">
 
 <p>Count the number of code points (characters) in the string assuming that it is valid. </p>
-<p>This function assumes that the input string is valid UTF-16BE.</p>
+<p>This function assumes that the input string is valid UTF-16BE. It is acceptable to pass invalid UTF-16 strings but in such cases the result is implementation defined.</p>
 <p>This function is not BOM-aware.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3298,7 +3303,7 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </div><div class="memdoc">
 
 <p>Count the number of code points (characters) in the string assuming that it is valid. </p>
-<p>This function assumes that the input string is valid UTF-16LE.</p>
+<p>This function assumes that the input string is valid UTF-16LE. It is acceptable to pass invalid UTF-16 strings but in such cases the result is implementation defined.</p>
 <p>This function is not BOM-aware.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3346,7 +3351,7 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 </div><div class="memdoc">
 
 <p>Count the number of code points (characters) in the string assuming that it is valid. </p>
-<p>This function assumes that the input string is valid UTF-8.</p>
+<p>This function assumes that the input string is valid UTF-8. It is acceptable to pass invalid UTF-8 strings but in such cases the result is implementation defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the UTF-8 string to process </td></tr>
@@ -3386,7 +3391,7 @@ virtual simdutf_warn_unused size_t&#160;</td><td class="memItemRight" valign="bo
 cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" &lt;&lt; impl-&gt;description() &lt;&lt; ")" &lt;&lt; endl;
 </pre> <dl class="section return"><dt>Returns</dt><dd>the name of the implementation, e.g. "haswell", "westmere", "arm64" </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="implementation_8h_source.html#l01561">1561</a> of file <a class="el" href="implementation_8h_source.html">implementation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implementation_8h_source.html#l01638">1638</a> of file <a class="el" href="implementation_8h_source.html">implementation.h</a>.</p>
 
 </div>
 </div>
@@ -3461,7 +3466,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Compute the number of bytes that this UTF-32 string would require in Latin1 format. </p>
-<p>This function does not validate the input.</p>
+<p>This function does not validate the input. It is acceptable to pass invalid UTF-32 strings but in such cases the result is implementation defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">length</td><td>the length of the string in 4-byte code units (char32_t) </td></tr>
@@ -3507,7 +3512,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Compute the number of bytes that this UTF-8 string would require in Latin1 format. </p>
-<p>This function does not validate the input.</p>
+<p>This function does not validate the input. It is acceptable to pass invalid UTF-8 strings but in such cases the result is implementation defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the UTF-8 string to convert </td></tr>
@@ -3554,7 +3559,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Provide the maximal binary length in bytes given the base64 input. </p>
-<p>In general, if the input contains ASCII spaces, the result will be less than the maximum length.</p>
+<p>In general, if the input contains ASCII spaces, the result will be less than the maximum length. It is acceptable to pass invalid base64 strings but in such cases the result is implementation defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the base64 input to process </td></tr>
@@ -3601,7 +3606,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Provide the maximal binary length in bytes given the base64 input. </p>
-<p>In general, if the input contains ASCII spaces, the result will be less than the maximum length.</p>
+<p>In general, if the input contains ASCII spaces, the result will be less than the maximum length. It is acceptable to pass invalid base64 strings but in such cases the result is implementation defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the base64 input to process, in ASCII stored as 16-bit units </td></tr>
@@ -3641,7 +3646,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" &lt;&lt; impl-&gt;description() &lt;&lt; ")" &lt;&lt; endl;
 </pre> <dl class="section return"><dt>Returns</dt><dd>the name of the implementation, e.g. "haswell", "westmere", "arm64" </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="implementation_8h_source.html#l01551">1551</a> of file <a class="el" href="implementation_8h_source.html">implementation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implementation_8h_source.html#l01628">1628</a> of file <a class="el" href="implementation_8h_source.html">implementation.h</a>.</p>
 
 </div>
 </div>
@@ -3737,7 +3742,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Compute the number of two-byte code units that this UTF-32 string would require in UTF-16 format. </p>
-<p>This function does not validate the input.</p>
+<p>This function does not validate the input. It is acceptable to pass invalid UTF-32 strings but in such cases the result is implementation defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the UTF-32 string to convert </td></tr>
@@ -3784,7 +3789,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Compute the number of 2-byte code units that this UTF-8 string would require in UTF-16LE format. </p>
-<p>This function does not validate the input.</p>
+<p>This function does not validate the input. It is acceptable to pass invalid UTF-8 strings but in such cases the result is implementation defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the UTF-8 string to process </td></tr>
@@ -3821,7 +3826,6 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Return the number of bytes that this UTF-32 string would require in Latin1 format. </p>
-<p>This function does not validate the input.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the UTF-32 string to convert </td></tr>
@@ -3868,7 +3872,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Compute the number of 4-byte code units that this UTF-8 string would require in UTF-32 format. </p>
-<p>This function is equivalent to count_utf8.</p>
+<p>This function is equivalent to count_utf8. It is acceptable to pass invalid UTF-8 strings but in such cases the result is implementation defined.</p>
 <p>This function does not validate the input.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3962,7 +3966,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Compute the number of bytes that this UTF-16BE string would require in UTF-8 format. </p>
-<p>This function does not validate the input.</p>
+<p>This function does not validate the input. It is acceptable to pass invalid UTF-16 strings but in such cases the result is implementation defined.</p>
 <p>This function is not BOM-aware.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4010,7 +4014,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Compute the number of bytes that this UTF-16LE string would require in UTF-8 format. </p>
-<p>This function does not validate the input.</p>
+<p>This function does not validate the input. It is acceptable to pass invalid UTF-16 strings but in such cases the result is implementation defined.</p>
 <p>This function is not BOM-aware.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4058,7 +4062,7 @@ cout &lt;&lt; "simdutf is optimized for " &lt;&lt; impl-&gt;name() &lt;&lt; "(" 
 </div><div class="memdoc">
 
 <p>Compute the number of bytes that this UTF-32 string would require in UTF-8 format. </p>
-<p>This function does not validate the input.</p>
+<p>This function does not validate the input. It is acceptable to pass invalid UTF-32 strings but in such cases the result is implementation defined.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>the UTF-32 string to convert </td></tr>
